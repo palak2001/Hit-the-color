@@ -1,5 +1,3 @@
-window.addEventListener('keydown',play);
-
 function play(e)
 {
     const audio= document.querySelector(`audio[data-key="${e.keyCode}"]`);
@@ -9,8 +7,42 @@ function play(e)
     return;
     audio.currentTime=0;
     audio.play();
-    key.classList.add('highlight');
     e.target.addEventListener('transitionend',e.target.classList.remove('highlight'));
 }
 
-const keys=document.querySelector('.key');
+function gamestart()
+{
+    console.log("hi");
+    var divtag= document.getElementsByClassName("key");
+    console.log(divtag);
+    if(divtag.length!=0)
+    {
+        var display= Math.floor(Math.random()*divtag.length);
+        for(i=0;i<divtag.length;i++)
+        {
+            if(i==display)
+            {
+                console.log("kahe");
+                divtag[i].classList.add('highlight');
+                break;
+            }
+        }
+        window.addEventListener('keydown',play);
+        const key=2;
+        var score=0;
+        if(key==divtag[i])
+        {
+            score++;
+        }
+        else if(divtag[i]!=key)
+        {
+            score--;
+        }
+        e.target.addEventListener('transitionend',e.target.classList.remove('highlight'));
+    }
+}
+
+var button= document.querySelector('.btn');
+button.addEventListener('click',gamestart);
+console.log("hi");
+
