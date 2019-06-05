@@ -44,5 +44,5 @@ function gamestart()
 
 var button= document.querySelector('.btn');
 button.addEventListener('click',gamestart);
-console.log("hi");
+console.log("yippee");
 
