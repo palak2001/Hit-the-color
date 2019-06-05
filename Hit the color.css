@@ -46,7 +46,20 @@ kbd
     font-size: 40px;
 }
 
-sound
+.btn
 {
-    font-size: 30px;
+    color: rgb(160, 179, 197);
+    height: 30px;
+    width: 100px;
+    float: right;
+    margin: 10px;
+}
+
+.score
+{
+    color: rgb(160, 179, 197);
+    height: 30px;
+    width: 100px;
+    float: left;
+    text-emphasis-color: black;
 }
