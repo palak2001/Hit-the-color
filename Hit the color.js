@@ -22,7 +22,7 @@ function gamestart()
         {
             if(i==display)
             {
-                console.log("kahe");
+                console.log("Hlo :p");
                 divtag[i].classList.add('highlight');
                 break;
             }
