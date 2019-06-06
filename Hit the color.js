@@ -22,14 +22,13 @@ function gamestart()
         {
             if(i==display)
             {
-                console.log("Hlo :p");
+                console.log("kahe");
                 divtag[i].classList.add('highlight');
                 break;
             }
         }
         window.addEventListener('keydown',play);
         const key=2;
-        var score=0;
         if(key==divtag[i])
         {
             score++;
@@ -42,7 +41,14 @@ function gamestart()
     }
 }
 
+function playstart()
+{
+    button.addEventListener('click',playstart)
+    setInterval(gamestart,100);
+}
+
+var score=0;
 var button= document.querySelector('.btn');
-button.addEventListener('click',gamestart);
-console.log("yippee");
+button.addEventListener('click',playstart);
+console.log("hi");
 
